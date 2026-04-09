@@ -3,24 +3,24 @@
 export default function TechStack() {
   const categories = [
     {
-      name: "Frontend",
+      name: "Collaboration / Design",
+      items: ["Figma", "Git"],
+    },
+    {
+      name: "Frontend Understanding",
       items: ["React", "Next.js", "TypeScript", "Node.js"],
     },
     {
-      name: "State Management",
+      name: "Data / API",
+      items: ["REST API", "FastAPI", "Flask", "OpenAI API", "Firebase"],
+    },
+    {
+      name: "State / Service Flow",
       items: ["Zustand"],
     },
     {
-      name: "Backend / API",
-      items: ["FastAPI", "Flask", "Firebase", "REST API", "OpenAI API"],
-    },
-    {
-      name: "Styling",
+      name: "UI / Styling",
       items: ["Tailwind CSS", "Styled Components"],
-    },
-    {
-      name: "Tools",
-      items: ["Git", "Figma"],
     },
   ];
 
@@ -28,12 +28,12 @@ export default function TechStack() {
     <section className="py-24 bg-gray-50">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16">
-          <p className="text-sm font-semibold text-blue-600">Tech Stack</p>
+          <p className="text-sm font-semibold text-blue-600">Experience Base</p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
-            기술 스택 & 사용 맥락
+            실무 기반 & 협업 이해
           </h2>
           <p className="mt-3 text-gray-600">
-            프로젝트에 실제 적용한 기술 기준으로 정리했습니다.
+            기획과 개발 커뮤니케이션에 활용한 도구와 실제 적용 기술입니다.
           </p>
         </div>
 

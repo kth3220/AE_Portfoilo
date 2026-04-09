@@ -1,6 +1,5 @@
-﻿"use client";
+"use client";
 
-import ImageFrame from "@/components/ImageFrame";
 
 export default function AuraArchitecture() {
   const steps = [

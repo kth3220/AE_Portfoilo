@@ -12,10 +12,10 @@ export default function ProjectSummary() {
       slug: "aura",
       badge: "개인",
       image: "aura-main.png",
-      role: "기획 · 디자인 · 프론트 · 백엔드 · 배포",
+      role: "서비스 기획 · 사용자 흐름 설계 · 구현 · 배포",
       stack: "Next.js · Node.js · TypeScript · FastAPI · OpenAI API",
       impact:
-        "AI 추천 데이터를 상태로 관리해\n챗봇 → 추천 카드 UI까지의 데이터 흐름을 설계했습니다.",
+        "AI 응답과 추천 결과 흐름을 정리해\n챗봇 경험과 상태 관리의 일관성을 높였습니다.",
     },
     {
       title: "MarketUpdate",
@@ -23,10 +23,10 @@ export default function ProjectSummary() {
       slug: "market",
       badge: "팀",
       image: "market-main-long.png",
-      role: "프론트엔드 40% (프론트 2인 중 1명)",
+      role: "화면 설계 · UI 구현 · 협업",
       stack: "React · Node.js · Spring Boot · WebSocket",
       impact:
-        "상품 목록/상세/채팅을 분리해\n화면 전환 흐름과 가독성을 개선했습니다.",
+        "상품 탐색부터 채팅까지의 흐름을 정리해\n주요 화면 가독성과 전환 경험을 개선했습니다.",
     },
     {
       title: "ProfitPilot",
@@ -34,9 +34,10 @@ export default function ProjectSummary() {
       slug: "profit",
       badge: "팀",
       image: "profit-main.png",
-      role: "프론트엔드 주도",
+      role: "UI/UX 기획 · 대시보드 설계",
       stack: "JavaScript · Flask · Chart.js · Jinja",
-      impact: "투자 데이터와 수익률을\n대시보드 UI로 시각화했습니다.",
+      impact:
+        "실시간 투자 데이터를 요약 구조로 재배치해\n핵심 정보 확인 흐름을 명확하게 만들었습니다.",
     },
     {
       title: "Vanilla JS SPA",
@@ -44,9 +45,10 @@ export default function ProjectSummary() {
       slug: "spa",
       badge: "개인",
       image: "vanilla-main.png",
-      role: "구조 설계",
+      role: "구조 설계 · 화면 흐름 구현",
       stack: "JavaScript · Router · Store",
-      impact: "라우터 / 상태 관리 / 렌더링 구조를\n순수 JavaScript로 구현했습니다.",
+      impact:
+        "라우팅 / 상태 / 렌더링 관계를 직접 설계하며\n웹 서비스 동작 구조를 깊게 이해했습니다.",
     },
   ];
 
@@ -56,10 +58,10 @@ export default function ProjectSummary() {
         <div className="mb-12">
           <p className="text-sm font-semibold text-blue-600">Projects</p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
-            대표 프로젝트 스냅샷
+            프로젝트 스냅샷
           </h2>
           <p className="mt-3 text-gray-600">
-            핵심 역할과 임팩트를 한 줄로 요약했습니다.
+            역할, 흐름 설계 포인트, 결과를 짧게 정리했습니다.
           </p>
         </div>
 
@@ -78,7 +80,7 @@ export default function ProjectSummary() {
                 <>
                   <span className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-400/10 to-purple-400/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                   <span className="absolute top-4 right-4 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 px-3 py-1 text-xs font-semibold text-white shadow-md">
-                    Featured
+                    대표
                   </span>
                 </>
               )}
@@ -120,12 +122,10 @@ export default function ProjectSummary() {
 
         <div className="mt-12 space-y-4 text-gray-700">
           <p>
-            AI API와 웹 서비스를 결합한 프로젝트를 중심으로 사용자 인터랙션과 데이터 흐름을 고려한
-            웹 애플리케이션을 구현했습니다.
+            기획 의도를 화면 구조와 기능 흐름으로 구체화하고, 실제 구현 과정에서 발생하는 제약까지 함께 다뤘습니다.
           </p>
           <p>
-            각 프로젝트에서 UI 설계, 상태 관리 구조, API 연동을 경험하며 서비스 구조를 구현하는 과정을
-            학습했습니다.
+            각 프로젝트는 단순 개발 결과물이 아니라 요구사항 정리, 화면 설계, 데이터 연결, QA 관점을 함께 담은 작업입니다.
           </p>
         </div>
       </div>

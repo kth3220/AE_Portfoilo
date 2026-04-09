@@ -9,9 +9,9 @@ export default function Contact() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <div className="text-4xl md:text-5xl font-bold">Thank you</div>
+            <div className="text-4xl md:text-5xl font-bold">Contact</div>
             <p className="text-gray-300 leading-relaxed">
-              포트폴리오를 봐주셔서 감사합니다.
+              서비스 흐름과 운영 관점을 함께 이해하는 웹 실무형 포트폴리오입니다.
             </p>
           </div>
 
@@ -19,7 +19,7 @@ export default function Contact() {
             <div className="space-y-4">
               <div>
                 <p className="text-2xl font-semibold">김태희</p>
-                <p className="text-lg text-gray-300">Frontend Developer</p>
+                <p className="text-lg text-gray-300">Web Planning / AE Candidate</p>
               </div>
 
               <div className="grid grid-cols-1 gap-3">

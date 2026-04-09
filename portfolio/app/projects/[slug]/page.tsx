@@ -1,10 +1,9 @@
-﻿"use client";
+"use client";
 
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import ProjectImageGallery from "@/components/ProjectImageGallery";
 import ProjectToc from "@/components/ProjectToc";
-import ImageFrame from "@/components/ImageFrame";
 
 const projectOrder = ["aura", "market", "profit", "spa"] as const;
 
@@ -71,21 +70,22 @@ const projectData: Record<
         result: "체감 대기 시간을 줄여 사용자 경험을 개선했습니다.",
       },
       {
-        problem: "SSR 환경 window 접근 오류",
+        problem: "브라우저 전용 API 접근으로 인한 세션 복원 불안정",
         solution:
-          "클라이언트 전용 분기 처리(typeof window 체크)로 안정적으로 렌더링되도록 개선",
-        result: "SSR 환경에서도 안정적으로 렌더링했습니다.",
+          "브라우저 전용 API 접근을 클라이언트로 한정해 세션 복원 로직의 실행 시점을 분리",
+        result: "새로고침 이후 세션 복원 흐름을 안정화했습니다.",
       },
       {
-        problem: "GPT JSON 구조 불안정",
-        solution: "응답 파싱 로직을 보강해 프론트엔드에서 일관된 구조로 변환",
-        result: "UI 예외 상황을 줄이고 추천 카드 렌더링 안정성을 높였습니다.",
+        problem: "AI 응답 포맷의 비정형성",
+        solution:
+          "응답 정규화 레이어를 추가해 프론트엔드와 상태 관리가 쓰는 공통 구조로 변환",
+        result: "추천 UI와 상태 관리의 일관성을 확보하고 예외 상황을 줄였습니다.",
       },
       {
         problem: "상태 관리 분리로 인한 UI 흐름 복잡도 증가",
         solution:
-          "Zustand를 기능별 스토어(채팅/요약/컨텍스트/인증)로 분리해 상태 흐름을 명확히 정리",
-        result: "추천 카드 렌더링 흐름을 안정적으로 관리할 수 있었습니다.",
+          "Zustand를 기능별 스토어(채팅/요약/컨텍스트/인증)로 나누고 책임 경계를 정리",
+        result: "추천 결과와 대화 상태의 업데이트 경로를 명확히 했습니다.",
       },
       {
         problem: "배포 장애 대응 (EC2 환경변수 / IP 변경)",
@@ -112,8 +112,8 @@ const projectData: Record<
     ],
     summary: [
       { label: "형태", value: "개인 프로젝트" },
-      { label: "역할", value: "기획 · 디자인 · 프론트엔드 · 백엔드 · 배포" },
-      { label: "핵심", value: "AI 추천 데이터 흐름 설계" },
+      { label: "역할", value: "기획 · 사용자 흐름 설계 · 구현 · 배포" },
+      { label: "핵심", value: "AI 추천 경험 설계와 데이터 흐름 정리" },
     ],
     tags: ["Next.js", "Node.js", "FastAPI", "OpenAI API", "Zustand"],
   },
@@ -168,8 +168,8 @@ const projectData: Record<
     ],
     summary: [
       { label: "형태", value: "팀 프로젝트" },
-      { label: "역할", value: "프론트엔드 40% (프론트 2인 중 1명)" },
-      { label: "핵심", value: "채팅 UI 구현 및 채팅 전환 흐름 개선" },
+      { label: "역할", value: "화면 설계 · 프론트엔드 40% (프론트 2인 중 1명)" },
+      { label: "핵심", value: "상품 탐색과 채팅 흐름 개선" },
     ],
     tags: ["React", "Node.js", "Spring Boot", "WebSocket", "Chat"],
   },
@@ -232,8 +232,8 @@ const projectData: Record<
     ],
     summary: [
       { label: "형태", value: "팀 프로젝트" },
-      { label: "역할", value: "UI/UX 설계(Figma), 실시간 데이터 연동 UI" },
-      { label: "핵심", value: "실시간 투자 UX 설계" },
+      { label: "역할", value: "UI/UX 기획(Figma) · 실시간 데이터 화면 설계" },
+      { label: "핵심", value: "투자 정보 구조와 대시보드 UX 설계" },
     ],
     tags: ["JavaScript", "Flask", "Chart.js", "Jinja"],
   },
@@ -300,8 +300,8 @@ const projectData: Record<
     ],
     summary: [
       { label: "형태", value: "개인 프로젝트" },
-      { label: "역할", value: "구조 설계" },
-      { label: "핵심", value: "SPA 핵심 기능 구현" },
+      { label: "역할", value: "구조 설계 · 흐름 구현" },
+      { label: "핵심", value: "웹 서비스 동작 구조 이해와 흐름 설계" },
     ],
     tags: ["JavaScript", "Router", "Store"],
   },
@@ -630,8 +630,3 @@ export default function ProjectDetailPage() {
     </main>
   );
 }
-
-
-
-
-

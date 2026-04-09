@@ -14,21 +14,19 @@ export default function AboutMe() {
             </div>
             <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
               <p className="text-base text-gray-600">
-                사용자 경험을 고려한 웹 서비스를 개발하는 프론트엔드 개발자 김태희입니다.
+                사용자 흐름과 요구사항을 구조화해 서비스로 연결하는 데 관심이 있는 김태희입니다.
               </p>
               <p className="text-base text-gray-600">
-                Next.js를 활용해 기획, 디자인, 프론트엔드, 백엔드 API, 배포까지 전 과정을 경험했습니다.
+                개인/팀 프로젝트에서 기획, 화면 설계, 구현, 배포까지 직접 맡으며 서비스가 실제로 운영되는 전체 흐름을 경험했습니다.
               </p>
               <p className="text-base text-gray-600">
-                React / Next.js 기반의 컴포넌트 설계와 상태 관리 구조를 통해
-                확장 가능한 UI 아키텍처를 구현하는 것에 관심이 있습니다.
+                문제를 보면 기능 하나만 고치는 것이 아니라 화면 이동, 상태 변화, 데이터 연결, 예외 케이스를 함께 확인하는 편입니다.
               </p>
               <p className="text-base text-gray-600">
-                프로젝트에서는 단순 UI 구현을 넘어
-                컴포넌트 구조 설계, 상태 관리, API 데이터 흐름을 함께 고려하며 개발했습니다.
+                기획 의도를 개발 언어로, 개발 이슈를 사용자 관점으로 다시 풀어 설명하는 커뮤니케이션에 강점이 있습니다.
               </p>
               <p className="text-base text-gray-600">
-                AI API를 활용한 프로젝트를 통해 웹 서비스와 AI 기능을 결합하는 경험을 쌓았습니다.
+                AI 추천 서비스, 거래 플랫폼, 대시보드 프로젝트를 통해 요구사항 정리와 실행력을 함께 갖춘 실무 감각을 키웠습니다.
               </p>
             </div>
           </div>

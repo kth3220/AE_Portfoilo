@@ -8,28 +8,28 @@ export default function Strength() {
     extra?: string;
   }[] = [
     {
-      title: "Component Architecture",
+      title: "Requirement Definition",
       description:
-        "컴포넌트의 책임을 분리해 UI 재사용성과 유지보수성을 높였습니다. Container / Presentational 구조로 UI와 로직을 분리했습니다.",
-      icon: "🧩",
+        "기능 구현 전에 목적, 사용자 행동, 예외 케이스를 먼저 정리했습니다. 화면 흐름과 데이터 흐름 기준으로 요구사항을 구조화했습니다.",
+      icon: "📌",
     },
     {
-      title: "State Management",
+      title: "Flow Planning",
       description:
-        "Zustand를 활용해 챗봇 상태, 사용자 정보, 추천 데이터를 분리했습니다. 이를 통해 UI 업데이트 흐름을 단순화했습니다.",
-      icon: "🧠",
+        "Figma와 실제 구현 경험을 바탕으로 주요 화면의 우선순위와 연결 방식을 설계했습니다. 전환 흐름이 끊기지 않도록 구조를 다듬었습니다.",
+      icon: "🗺️",
     },
     {
-      title: "API Integration",
+      title: "Communication",
       description:
-        "FastAPI / Flask 기반 API와 연동해 AI 추천 서비스와 웹 UI를 연결했습니다. 비동기 요청 처리와 데이터 구조 안정성을 고려했습니다.",
-      icon: "🔌",
+        "기획, 디자인, 개발을 모두 경험해 각 관점의 언어를 연결할 수 있습니다. 수정 포인트와 이슈를 작업 단위로 명확하게 정리했습니다.",
+      icon: "🤝",
     },
     {
-      title: "Performance Optimization",
+      title: "Execution & QA",
       description:
-        "Next.js SSR/CSR 환경에서 발생하는 문제를 해결하고 불필요한 렌더링을 줄여 UI 성능을 개선했습니다.",
-      icon: "⚡",
+        "직접 구현과 검증까지 해본 만큼 문제 재현 조건과 원인을 빠르게 좁히는 편입니다. 운영 중 발생할 수 있는 예외와 후속 대응까지 함께 고려했습니다.",
+      icon: "🔎",
     },
   ];
 
@@ -42,7 +42,7 @@ export default function Strength() {
             핵심 역량 & 작업 방식
           </h2>
           <p className="mt-3 text-gray-600">
-            구조 설계, 상태 관리, 성능 개선 관점에서 역량을 정리했습니다.
+            요구사항 정의, 흐름 설계, 커뮤니케이션, 운영 관점에서 역량을 정리했습니다.
           </p>
         </div>
 

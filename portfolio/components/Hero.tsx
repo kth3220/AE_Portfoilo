@@ -1,4 +1,6 @@
-﻿"use client";
+"use client";
+
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -16,43 +18,42 @@ export default function Hero() {
                 김태희
               </h1>
               <p className="text-2xl md:text-3xl text-gray-600 font-light">
-                Frontend Developer
+                Web Planning & Operations
               </p>
             </div>
 
             <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
               <p className="text-xl font-light">
                 <span className="font-semibold text-gray-900">
-                  React / Next.js / TypeScript
-                </span>{" "}
-                기반으로
+                  기획과 구현을 함께 이해하며
+                </span>
                 <br />
-                사용자 인터랙션 중심의 웹 서비스를 개발하는 프론트엔드 개발자입니다.
+                서비스 흐름을 설계하는 웹 실무형 인재입니다.
               </p>
               <p className="text-lg text-gray-600">
-                컴포넌트 구조 설계와 상태 관리(Zustand)를 활용해
+                요구사항을 화면 구조와 기능 단위로 정리하고,
                 <br />
-                확장 가능한 UI 아키텍처를 구현하는 것에 관심이 있습니다.
+                사용자 경험이 끊기지 않도록 흐름을 다듬는 데 강점이 있습니다.
               </p>
               <p className="text-lg text-gray-600">
-                AI API와 웹 서비스를 결합한 프로젝트를 통해
+                프로젝트에서 기획, 디자인, 프론트엔드, API 연동, 배포까지 경험하며
                 <br />
-                데이터 흐름과 사용자 경험을 함께 고려한 서비스를 개발했습니다.
+                협업 커뮤니케이션과 실행이 연결되는 방식을 배웠습니다.
               </p>
               <p className="text-lg text-gray-600">
-                Next.js 기반으로 기획, 디자인, 프론트엔드, 백엔드 API, 배포까지
+                개발을 이해하는 기획자로서 요구사항 정의와 운영 개선 포인트를
                 <br />
-                전 과정을 직접 수행할 수 있습니다.
+                더 구체적인 화면과 기능 언어로 연결할 수 있습니다.
               </p>
             </div>
 
             <div className="flex flex-wrap gap-3">
-              <a
+              <Link
                 href="/projects"
                 className="px-5 py-2.5 rounded-lg bg-blue-600 text-white text-sm font-semibold hover:bg-blue-700 transition-colors"
               >
                 프로젝트 상세 보기
-              </a>
+              </Link>
               <a
                 href="#projects"
                 className="px-5 py-2.5 rounded-lg border border-gray-300 text-gray-900 text-sm font-semibold hover:border-blue-600 hover:text-blue-700 transition-colors"
@@ -105,4 +106,3 @@ export default function Hero() {
     </section>
   );
 }
-

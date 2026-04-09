@@ -38,7 +38,7 @@ export default function ProjectsPage() {
             프로젝트
           </h1>
           <p className="text-gray-600 mt-4">
-            대표 프로젝트를 상세 페이지로 정리했습니다.
+            서비스 기획, 화면 설계, 구현 경험을 프로젝트별로 정리했습니다.
           </p>
 
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -52,7 +52,7 @@ export default function ProjectsPage() {
               >
                 <div className="flex items-center justify-between mb-4">
                   <div className="text-sm font-semibold text-blue-600">
-                    {project.featured ? "대표 프로젝트" : "Project"}
+                    {project.featured ? "대표 프로젝트" : "프로젝트"}
                   </div>
                 </div>
                 <ImageFrame
