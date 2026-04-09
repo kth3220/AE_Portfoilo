@@ -1,2 +1,2 @@
-# portfolio
-Frontend developer portfolio built with Next.js and TailwindCSS
+# AE Portfolio
+Web planning and AE portfolio built with Next.js and Tailwind CSS.
