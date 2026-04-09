@@ -1,90 +1,96 @@
-﻿"use client";
+"use client";
 
 export default function TechStack() {
   const categories = [
     {
-      name: "Collaboration / Design",
-      items: ["Figma", "Git"],
+      name: "학력",
+      items: ["2021.03 ~ 2026.02", "서일대학교 소프트웨어공학과 학사"],
     },
     {
-      name: "Frontend Understanding",
-      items: ["React", "Next.js", "TypeScript", "Node.js"],
+      name: "자격증",
+      items: ["정보처리기사 · 2025.09", "SQLD · 2024.09", "GTQ 1급 · 2023.02"],
     },
     {
-      name: "Data / API",
-      items: ["REST API", "FastAPI", "Flask", "OpenAI API", "Firebase"],
+      name: "문서 / 협업 도구",
+      items: ["Notion", "Google 스프레드시트", "Excel", "PowerPoint"],
     },
     {
-      name: "State / Service Flow",
-      items: ["Zustand"],
+      name: "디자인 / 운영 도구",
+      items: ["Figma", "Git / GitHub", "AWS EC2", "Vercel"],
     },
     {
-      name: "UI / Styling",
-      items: ["Tailwind CSS", "Styled Components"],
+      name: "개발 이해 범위",
+      items: [
+        "HTML/CSS",
+        "JavaScript",
+        "React / Next.js",
+        "Python / FastAPI / REST API / MySQL",
+      ],
     },
   ];
 
   return (
-    <section className="py-24 bg-gray-50">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-24 bg-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16">
-          <p className="text-sm font-semibold text-blue-600">Experience Base</p>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
-            실무 기반 & 협업 이해
+          <p className="text-sm font-semibold text-blue-600">Resume Data</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-950">
+            학력 · 자격 · 도구
           </h2>
           <p className="mt-3 text-gray-600">
-            기획과 개발 커뮤니케이션에 활용한 도구와 실제 적용 기술입니다.
+            지원서에 들어가는 핵심 이력 정보를 바로 확인할 수 있게 묶었습니다.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-5">
           {categories.map((category, categoryIndex) => {
             const categoryColors = [
               {
-                bg: "from-blue-50 to-blue-100",
+                bg: "from-blue-50 to-white",
                 border: "border-blue-200",
-                text: "text-blue-700",
-                badge: "bg-blue-100 text-blue-700",
+                text: "text-blue-800",
+                badge: "bg-blue-50 text-blue-800 border-blue-100",
               },
               {
-                bg: "from-purple-50 to-purple-100",
-                border: "border-purple-200",
-                text: "text-purple-700",
-                badge: "bg-purple-100 text-purple-700",
+                bg: "from-slate-50 to-white",
+                border: "border-slate-200",
+                text: "text-slate-800",
+                badge: "bg-slate-50 text-slate-800 border-slate-200",
               },
               {
-                bg: "from-cyan-50 to-cyan-100",
+                bg: "from-cyan-50 to-white",
                 border: "border-cyan-200",
-                text: "text-cyan-700",
-                badge: "bg-cyan-100 text-cyan-700",
+                text: "text-cyan-800",
+                badge: "bg-cyan-50 text-cyan-800 border-cyan-100",
               },
               {
-                bg: "from-emerald-50 to-emerald-100",
+                bg: "from-emerald-50 to-white",
                 border: "border-emerald-200",
-                text: "text-emerald-700",
-                badge: "bg-emerald-100 text-emerald-700",
+                text: "text-emerald-800",
+                badge: "bg-emerald-50 text-emerald-800 border-emerald-100",
               },
               {
-                bg: "from-amber-50 to-amber-100",
+                bg: "from-amber-50 to-white",
                 border: "border-amber-200",
-                text: "text-amber-700",
-                badge: "bg-amber-100 text-amber-700",
+                text: "text-amber-800",
+                badge: "bg-amber-50 text-amber-800 border-amber-100",
               },
             ];
             const color = categoryColors[categoryIndex % 5];
+
             return (
               <div
                 key={category.name}
-                className={`p-8 rounded-2xl bg-gradient-to-br ${color.bg} border ${color.border} hover:shadow-lg transition-all duration-300`}
+                className={`rounded-[28px] border ${color.border} bg-gradient-to-br ${color.bg} p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg`}
               >
-                <h3 className={`text-lg font-bold ${color.text} mb-6`}>
+                <h3 className={`mb-6 text-lg font-bold ${color.text}`}>
                   {category.name}
                 </h3>
                 <div className="space-y-3">
                   {category.items.map((item) => (
                     <div
                       key={item}
-                      className={`px-4 py-2 rounded-lg ${color.badge} text-sm font-semibold hover:shadow-md transition-all duration-300 transform hover:scale-105 cursor-default flex items-center gap-2`}
+                      className={`flex cursor-default items-center gap-2 rounded-xl border px-4 py-3 text-sm font-semibold ${color.badge}`}
                     >
                       <span>{item}</span>
                     </div>
