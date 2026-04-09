@@ -12,21 +12,18 @@ export default function AboutMe() {
                 소개
               </h2>
             </div>
-            <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
+            <div className="space-y-6 text-gray-700 text-lg leading-relaxed break-keep">
               <p className="text-base text-gray-600">
-                사용자 흐름과 요구사항을 구조화해 서비스로 연결하는 데 관심이 있는 김태희입니다.
+                소프트웨어공학을 전공하며 웹서비스를 직접 만들고 운영하는 과정에서, 서비스는 구현보다 요구사항과 흐름이 명확할 때 더 안정적으로 운영된다는 점을 배웠습니다.
               </p>
               <p className="text-base text-gray-600">
-                개인/팀 프로젝트에서 기획, 화면 설계, 구현, 배포까지 직접 맡으며 서비스가 실제로 운영되는 전체 흐름을 경험했습니다.
+                개인 프로젝트와 팀 프로젝트에서 서비스 구조, 화면 목적, 기능 범위, 예외 케이스를 정리하고 이를 실제 구현과 배포까지 연결하는 경험을 쌓았습니다.
               </p>
               <p className="text-base text-gray-600">
-                문제를 보면 기능 하나만 고치는 것이 아니라 화면 이동, 상태 변화, 데이터 연결, 예외 케이스를 함께 확인하는 편입니다.
+                Figma로 화면 구조를 설계하고 Notion, Google Sheets, Excel로 작업 내용과 API 항목을 문서화하며 여러 사람이 같은 기준으로 움직일 수 있도록 정리했습니다.
               </p>
               <p className="text-base text-gray-600">
-                기획 의도를 개발 언어로, 개발 이슈를 사용자 관점으로 다시 풀어 설명하는 커뮤니케이션에 강점이 있습니다.
-              </p>
-              <p className="text-base text-gray-600">
-                AI 추천 서비스, 거래 플랫폼, 대시보드 프로젝트를 통해 요구사항 정리와 실행력을 함께 갖춘 실무 감각을 키웠습니다.
+                기획 의도를 개발 언어로, 개발 이슈를 사용자 관점으로 다시 풀어 설명하는 커뮤니케이션과 꼼꼼한 정리에 강점이 있습니다.
               </p>
             </div>
           </div>

@@ -4,7 +4,7 @@
       title: "Aura AI Chatbot",
       description: "ChatGPT 기반 AI 챗봇 서비스",
       demo: "https://aura-ai-three-kappa.vercel.app",
-      github: "https://github.com/kth3220/aura-ai",
+      github: "https://github.com/kth3220/aura_ai",
     },
   ];
 
@@ -47,3 +47,4 @@
     </section>
   );
 }
+

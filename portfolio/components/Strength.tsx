@@ -10,25 +10,25 @@ export default function Strength() {
     {
       title: "Requirement Definition",
       description:
-        "기능 구현 전에 목적, 사용자 행동, 예외 케이스를 먼저 정리했습니다. 화면 흐름과 데이터 흐름 기준으로 요구사항을 구조화했습니다.",
+        "사용자 시나리오, 기능 범위, 예외 케이스를 먼저 정리해 요구사항을 실행 가능한 단위로 구체화했습니다.",
       icon: "📌",
     },
     {
-      title: "Flow Planning",
+      title: "Communication & PM",
       description:
-        "Figma와 실제 구현 경험을 바탕으로 주요 화면의 우선순위와 연결 방식을 설계했습니다. 전환 흐름이 끊기지 않도록 구조를 다듬었습니다.",
+        "기획, 디자인, 개발을 모두 경험해 각 관점의 언어를 연결할 수 있습니다. 수정 포인트와 일정, 이슈를 작업 단위로 정리했습니다.",
       icon: "🗺️",
     },
     {
-      title: "Communication",
+      title: "Planning Deliverables",
       description:
-        "기획, 디자인, 개발을 모두 경험해 각 관점의 언어를 연결할 수 있습니다. 수정 포인트와 이슈를 작업 단위로 명확하게 정리했습니다.",
+        "Figma, Notion, Google Sheets, Excel, PowerPoint를 활용해 화면 구조, API 항목, 회의 내용, 진행 현황을 문서화했습니다.",
       icon: "🤝",
     },
     {
-      title: "Execution & QA",
+      title: "Operation & QA",
       description:
-        "직접 구현과 검증까지 해본 만큼 문제 재현 조건과 원인을 빠르게 좁히는 편입니다. 운영 중 발생할 수 있는 예외와 후속 대응까지 함께 고려했습니다.",
+        "직접 구현과 배포를 경험해 운영 중 발생할 수 있는 예외와 수정 포인트를 함께 봅니다. 점검과 후속 대응까지 고려해 구조를 다듬었습니다.",
       icon: "🔎",
     },
   ];
@@ -42,7 +42,7 @@ export default function Strength() {
             핵심 역량 & 작업 방식
           </h2>
           <p className="mt-3 text-gray-600">
-            요구사항 정의, 흐름 설계, 커뮤니케이션, 운영 관점에서 역량을 정리했습니다.
+            요구사항 정의, 기획 산출물 작성, 협업 커뮤니케이션, 운영 관점에서 강점을 정리했습니다.
           </p>
         </div>
 
@@ -69,11 +69,11 @@ export default function Strength() {
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
                   {strength.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed text-sm">
+                <p className="text-gray-600 leading-relaxed text-sm break-keep">
                   {strength.description}
                 </p>
                 {strength.extra && (
-                  <p className="text-gray-600 leading-relaxed text-sm mt-3">
+                  <p className="text-gray-600 leading-relaxed text-sm mt-3 break-keep">
                     {strength.extra}
                   </p>
                 )}

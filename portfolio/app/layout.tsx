@@ -1,9 +1,9 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Taehee Kim | Web Planning Portfolio",
+  title: "김태희 | 웹 기획 · 사이트 운영 포트폴리오",
   description:
-    "Portfolio focused on web planning, service flow design, and end-to-end execution across planning, UI, development, and deployment.",
+    "요구사항 정의, 화면 흐름 설계, 협업 커뮤니케이션, 운영 관점을 중심으로 정리한 웹 기획 및 사이트 운영 포트폴리오.",
   icons: {
     icon: "/favicon.svg",
   },

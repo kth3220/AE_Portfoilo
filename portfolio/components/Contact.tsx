@@ -10,8 +10,8 @@ export default function Contact() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <div className="text-4xl md:text-5xl font-bold">Contact</div>
-            <p className="text-gray-300 leading-relaxed">
-              프로젝트와 작업 방식, 연락처를 한 곳에서 확인할 수 있도록 정리했습니다.
+            <p className="text-gray-300 leading-relaxed break-keep">
+              사이트 운영과 구축 기획에 필요한 흐름 설계, 협업, 문서화 경험을 프로젝트 중심으로 정리했습니다.
             </p>
           </div>
 
@@ -19,7 +19,9 @@ export default function Contact() {
             <div className="space-y-4">
               <div>
                 <p className="text-2xl font-semibold">김태희</p>
-                <p className="text-lg text-gray-300">Web Project Portfolio</p>
+                <p className="text-lg text-gray-300">
+                  Web Planning & Site Operations
+                </p>
               </div>
 
               <div className="grid grid-cols-1 gap-3">

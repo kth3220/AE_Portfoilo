@@ -11,39 +11,30 @@ export default function Hero() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
-          <div className="lg:col-span-2 space-y-8 animate-fadeInUp">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div className="lg:col-span-7 space-y-8 animate-fadeInUp">
             <div className="space-y-4">
               <h1 className="text-6xl md:text-7xl font-bold bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900 bg-clip-text text-transparent">
                 김태희
               </h1>
               <p className="text-2xl md:text-3xl text-gray-600 font-light">
-                Web Project Portfolio
+                웹 기획 · 사이트 운영 포트폴리오
               </p>
             </div>
 
-            <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
+            <div className="space-y-4 text-lg text-gray-700 leading-relaxed break-keep">
               <p className="text-xl font-light">
-                <span className="font-semibold text-gray-900">
-                  기획과 구현을 함께 이해하며
-                </span>
-                <br />
-                서비스 흐름을 설계하는 웹 실무형 인재입니다.
+                <span className="font-semibold text-gray-900">요구사항을 정리하고 화면 흐름으로 구체화해</span>{" "}
+                서비스 운영까지 연결하는 웹 기획 포트폴리오입니다.
               </p>
               <p className="text-lg text-gray-600">
-                요구사항을 화면 구조와 기능 단위로 정리하고,
-                <br />
-                사용자 경험이 끊기지 않도록 흐름을 다듬는 데 강점이 있습니다.
+                개인 프로젝트와 팀 프로젝트에서 서비스 기획, 화면 설계, 구현, 배포를 직접 경험하며 요구사항 정의와 실행 사이의 간격을 줄이는 방식을 익혔습니다.
               </p>
               <p className="text-lg text-gray-600">
-                프로젝트에서 기획, 디자인, 프론트엔드, API 연동, 배포까지 경험하며
-                <br />
-                협업 커뮤니케이션과 실행이 연결되는 방식을 배웠습니다.
+                Figma, Notion, Google Sheets를 활용해 기능 범위와 작업 흐름을 정리하고, 개발 이슈와 사용자 관점을 함께 고려해 커뮤니케이션했습니다.
               </p>
               <p className="text-lg text-gray-600">
-                개발을 이해하는 기획자로서 요구사항 정의와 운영 개선 포인트를
-                <br />
-                더 구체적인 화면과 기능 언어로 연결할 수 있습니다.
+                브랜드 사이트 운영과 구축 기획 업무에 맞춰 화면 구조, 콘텐츠 흐름, 예외 케이스, 운영 이후 수정 가능성까지 함께 보는 관점을 담았습니다.
               </p>
             </div>
 
@@ -86,7 +77,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="lg:col-span-3 hidden lg:flex items-center justify-center">
+          <div className="lg:col-span-5 hidden lg:flex items-center justify-center">
             <div className="relative w-full max-w-2xl">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-100/30 to-purple-100/30 rounded-2xl blur-2xl" />
               <div className="relative bg-white rounded-2xl border-2 border-gray-200 p-6 shadow-2xl">

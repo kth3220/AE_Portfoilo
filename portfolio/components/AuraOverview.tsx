@@ -70,7 +70,7 @@ export default function AuraOverview() {
                 Live Demo
               </a>
               <a
-                href="https://github.com/kth3220/aura-ai"
+                href="https://github.com/kth3220/aura_ai"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-5 py-2.5 rounded-lg border border-gray-300 text-gray-900 text-sm font-semibold hover:border-blue-600 hover:text-blue-700 transition-colors"
@@ -97,3 +97,4 @@ export default function AuraOverview() {
     </section>
   );
 }
+

@@ -3,11 +3,11 @@
 export default function TechStack() {
   const categories = [
     {
-      name: "Planning / Docs",
+      name: "Planning / Deliverables",
       items: ["Figma", "Notion", "Google Sheets", "Excel", "PowerPoint"],
     },
     {
-      name: "Collaboration / Versioning",
+      name: "Project Collaboration",
       items: ["Git", "GitHub"],
     },
     {
@@ -30,10 +30,10 @@ export default function TechStack() {
         <div className="mb-16">
           <p className="text-sm font-semibold text-blue-600">Experience Base</p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
-            도구 & 기술 기반
+            기획 산출물 & 협업 기반
           </h2>
           <p className="mt-3 text-gray-600">
-            프로젝트 기획, 협업, 구현, 운영 과정에서 실제로 사용한 도구와 기술입니다.
+            기획 산출물 작성, 협업 커뮤니케이션, 개발 협업에 활용한 도구와 기술입니다.
           </p>
         </div>
 

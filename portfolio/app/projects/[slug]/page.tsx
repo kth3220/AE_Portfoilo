@@ -100,7 +100,7 @@ const projectData: Record<
     ],
     links: [
       { label: "Live Demo", href: "https://aura-ai-three-kappa.vercel.app/" },
-      { label: "GitHub", href: "https://github.com/kth3220/aura-ai" },
+      { label: "GitHub", href: "https://github.com/kth3220/aura_ai" },
     ],
     images: [
       { label: "메인 화면", filename: "aura-main.png" },

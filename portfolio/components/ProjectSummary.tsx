@@ -12,10 +12,10 @@ export default function ProjectSummary() {
       slug: "aura",
       badge: "개인",
       image: "aura-main.png",
-      role: "서비스 기획 · 사용자 흐름 설계 · 구현 · 배포",
+      role: "서비스 기획 · 사용자 흐름 설계 · 구현 · 운영",
       stack: "Next.js · Node.js · TypeScript · FastAPI · OpenAI API",
       impact:
-        "AI 응답과 추천 결과 흐름을 정리해\n챗봇 경험과 상태 관리의 일관성을 높였습니다.",
+        "AI 응답과 추천 결과 흐름을 정리해 추천 UI와 상태 관리의 일관성을 높였습니다.",
     },
     {
       title: "MarketUpdate",
@@ -23,10 +23,10 @@ export default function ProjectSummary() {
       slug: "market",
       badge: "팀",
       image: "market-main-long.png",
-      role: "화면 설계 · UI 구현 · 협업",
+      role: "화면 설계 · 문서화 · 프론트엔드 협업",
       stack: "React · Node.js · Spring Boot · WebSocket",
       impact:
-        "상품 탐색부터 채팅까지의 흐름을 정리해\n주요 화면 가독성과 전환 경험을 개선했습니다.",
+        "상품 탐색부터 채팅까지의 흐름을 정리해 주요 화면 가독성과 전환 경험을 개선했습니다.",
     },
     {
       title: "ProfitPilot",
@@ -34,10 +34,10 @@ export default function ProjectSummary() {
       slug: "profit",
       badge: "팀",
       image: "profit-main.png",
-      role: "UI/UX 기획 · 대시보드 설계",
+      role: "UI/UX 기획 · 화면 설계 · 협업 문서화",
       stack: "JavaScript · Flask · Chart.js · Jinja",
       impact:
-        "실시간 투자 데이터를 요약 구조로 재배치해\n핵심 정보 확인 흐름을 명확하게 만들었습니다.",
+        "실시간 투자 데이터를 요약 구조로 재배치해 핵심 정보 확인 흐름을 명확하게 만들었습니다.",
     },
     {
       title: "Vanilla JS SPA",
@@ -48,7 +48,7 @@ export default function ProjectSummary() {
       role: "구조 설계 · 화면 흐름 구현",
       stack: "JavaScript · Router · Store",
       impact:
-        "라우팅 / 상태 / 렌더링 관계를 직접 설계하며\n웹 서비스 동작 구조를 깊게 이해했습니다.",
+        "라우팅, 상태, 렌더링 관계를 직접 설계하며 웹 서비스 동작 구조를 깊게 이해했습니다.",
     },
   ];
 
@@ -61,7 +61,7 @@ export default function ProjectSummary() {
             프로젝트 스냅샷
           </h2>
           <p className="mt-3 text-gray-600">
-            역할, 흐름 설계 포인트, 결과를 짧게 정리했습니다.
+            역할, 요구사항 정리 포인트, 협업 방식, 결과를 짧게 정리했습니다.
           </p>
         </div>
 
@@ -112,7 +112,7 @@ export default function ProjectSummary() {
                   {project.stack}
                 </span>
               </div>
-              <p className="mt-3 text-xs text-gray-500 leading-relaxed whitespace-pre-line flex items-start gap-2">
+              <p className="mt-3 text-xs text-gray-500 leading-relaxed break-keep flex items-start gap-2">
                 <span className="text-blue-500">✔</span>
                 <span>{project.impact}</span>
               </p>
@@ -120,12 +120,12 @@ export default function ProjectSummary() {
           ))}
         </div>
 
-        <div className="mt-12 space-y-4 text-gray-700">
+        <div className="mt-12 space-y-4 text-gray-700 break-keep">
           <p>
-            기획 의도를 화면 구조와 기능 흐름으로 구체화하고, 실제 구현 과정에서 발생하는 제약까지 함께 다뤘습니다.
+            기획 의도를 화면 구조와 기능 흐름으로 구체화하고, 구현과 운영 과정에서 필요한 커뮤니케이션 기준까지 함께 정리했습니다.
           </p>
           <p>
-            각 프로젝트는 단순 개발 결과물이 아니라 요구사항 정리, 화면 설계, 데이터 연결, QA 관점을 함께 담은 작업입니다.
+            각 프로젝트는 단순 개발 결과물이 아니라 요구사항 정의, 기획 산출물, 데이터 연결, QA 관점을 함께 담은 작업입니다.
           </p>
         </div>
       </div>
