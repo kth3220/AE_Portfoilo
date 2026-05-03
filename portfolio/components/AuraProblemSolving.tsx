@@ -33,11 +33,11 @@ export default function AuraProblemSolving() {
       impact: "추천 결과와 대화 상태의 업데이트 경로를 명확히 했습니다.",
     },
     {
-      problem: "배포 장애 대응 (EC2 환경변수 / IP 변경)",
-      cause: ".env 설정 누락과 EC2 IP 변경으로 서비스 연결이 중단되었습니다.",
+      problem: "배포 장애 대응 (EC2 공인 IP 변경)",
+      cause: "EC2 인스턴스 재시작 이후 공인 IP가 변경되며 서비스 연결이 끊어졌습니다.",
       solution:
-        ".env 설정 누락과 IP 변경 원인을 파악해 환경변수 동기화 및 Elastic IP를 적용했습니다.",
-      impact: "배포 안정성을 확보하고 운영 이슈 대응 경험을 쌓았습니다.",
+        "EC2 재시작 시 공인 IP가 바뀌는 구조를 확인하고 Elastic IP를 연결해 고정 IP로 운영했습니다.",
+      impact: "배포 후에도 안정적으로 서비스 연결을 유지하며 운영 이슈 대응 경험을 쌓았습니다.",
     },
   ];
 
