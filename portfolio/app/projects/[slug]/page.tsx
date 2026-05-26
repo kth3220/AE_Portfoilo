@@ -91,7 +91,8 @@ const projectData: Record<
         problem: "배포 장애 대응 (EC2 공인 IP 변경)",
         solution:
           "EC2 재시작 시 공인 IP가 변경되는 원인을 파악하고 Elastic IP를 연결해 고정 IP로 운영",
-        result: "배포 후에도 안정적으로 서비스 연결을 유지하며 운영 이슈 대응 경험을 쌓았습니다.",
+        result:
+          "배포 후에도 안정적으로 서비스 연결을 유지하며 운영 이슈 대응 경험을 쌓았습니다.",
       },
     ],
     learnings: [
