@@ -5,22 +5,22 @@ export default function DevelopmentPhilosophy() {
     <section className="py-24 bg-gradient-to-br from-white via-blue-50 to-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-6">
-          <p className="text-sm font-semibold text-blue-600">Work Style</p>
+          <p className="text-sm font-semibold text-blue-600">Philosophy</p>
           <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900 bg-clip-text text-transparent">
             일하는 방식
           </h2>
-          <div className="text-xl text-gray-700 leading-relaxed space-y-4 break-keep">
+          <div className="text-xl text-gray-700 leading-relaxed space-y-4">
             <p>
-              저는 먼저 요구사항의 목적과 우선순위를 정리하고, 화면 구조와 기능 흐름으로 풀어내는 방식으로 일합니다.
+              먼저 서비스가 해결하려는 문제와 사용자 흐름을 정리하고, 그다음
+              화면 구조와 데이터 흐름으로 구체화하는 방식으로 작업합니다.
             </p>
             <p>
-              무엇을 만들지보다 어떤 사용자 상황을 해결해야 하는지, 운영 중 어떤 수정이 생길 수 있는지를 먼저 확인해야 결과물이 단단해진다고 생각합니다.
+              필요한 경우 Figma, Notion, Excel로 기준을 문서화해 구현 과정에서
+              빠지는 정보가 없도록 맞추는 것을 중요하게 생각합니다.
             </p>
             <p>
-              그래서 화면 흐름, 예외 케이스, 수정 요청, 작업 우선순위를 문서로 남기고 기획과 개발 사이에서 빠지는 정보가 없도록 커뮤니케이션합니다.
-            </p>
-            <p>
-              앞으로도 사이트 운영과 구축 프로젝트에서 신뢰할 수 있는 기준을 만드는 웹 기획자로 성장하고 싶습니다.
+              직접 구현해보며 구조가 실제로 어떻게 동작하는지 확인하고, 운영 중
+              발생할 수 있는 문제까지 함께 보는 태도를 유지하고 싶습니다.
             </p>
           </div>
         </div>

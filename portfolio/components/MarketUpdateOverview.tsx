@@ -1,4 +1,6 @@
-﻿"use client";
+"use client";
+
+import InteractiveProjectImage from "@/components/InteractiveProjectImage";
 
 export default function MarketUpdateOverview() {
   return (
@@ -8,11 +10,13 @@ export default function MarketUpdateOverview() {
           <div className="flex items-center justify-center">
             <div className="relative w-full max-w-md">
               <div className="absolute inset-0 bg-gradient-to-br from-cyan-100/30 to-blue-100/30 rounded-2xl blur-2xl" />
-              <div className="relative bg-white rounded-2xl flex items-center justify-center border-2 border-gray-200 p-12 shadow-lg">
-                <img
+              <div className="relative rounded-2xl border-2 border-gray-200 bg-white p-6 shadow-lg">
+                <InteractiveProjectImage
                   src="/market-main-long.png"
-                  alt="상품 리스트 화면"
-                  className="w-full h-auto rounded-lg"
+                  alt="MarketUpdate 상품 리스트 화면"
+                  className="h-[320px] md:h-[380px]"
+                  fit="contain"
+                  detailHref="/projects/market"
                 />
               </div>
             </div>
@@ -27,25 +31,25 @@ export default function MarketUpdateOverview() {
                 프로젝트 개요
               </h2>
               <p className="text-xl text-gray-700 font-semibold mb-4">
-                중고 거래 플랫폼 웹 서비스
+                중고 거래 플랫폼 학습 프로젝트
               </p>
               <p className="text-gray-600 leading-relaxed">
-                사용자가 상품을 등록하고 다른 사용자와 채팅을 통해 거래를 진행할
-                수 있는 서비스입니다.
+                실제 사용자가 많은 중고 거래 서비스의 흐름과 디테일을 공부하기
+                위해, 상품 등록부터 채팅, 공지사항, 관리자 계정, 위치 정보까지
+                함께 다룬 프로젝트입니다.
               </p>
             </div>
 
             <div className="space-y-2 text-gray-700">
-              <p className="font-semibold">담당 범위</p>
-              <p>팀 프로젝트</p>
-              <p>기획 참여 · 웹디자인 단독 · 프론트엔드 협업</p>
-              <p className="font-semibold mt-3">주요 수행 내용</p>
+              <p className="font-semibold">프로젝트 형태</p>
+              <p>팀 프로젝트 (5인) · 2024.08 ~ 2024.12</p>
+              <p>기획 2인 협업 / 디자인 단독 / 프론트엔드 담당</p>
+              <p className="font-semibold mt-3">담당 역할</p>
               <ul className="text-sm text-gray-600 space-y-1">
-                <li>• 상품 목록, 상세, 채팅, 마이페이지 등 주요 화면 흐름 정리</li>
-                <li>• Figma로 전 화면 UX/UI 설계 수행</li>
-                <li>• React 기반 주요 화면 구현 및 채팅 UI 협업</li>
-                <li>• Google 스프레드시트로 API 항목 정리 및 연동 범위 조율</li>
-                <li>• FAQ / Notice / 푸터 등 운영성 화면 구성</li>
+                <li>• Figma 기반 전 화면 구조 설계</li>
+                <li>• 상품 목록, 상세, 채팅, 공지사항, 마이페이지 화면 구현</li>
+                <li>• 관리자 전용 계정과 운영 기능 흐름 반영</li>
+                <li>• API 변수명과 데이터 항목 기준 정리</li>
               </ul>
             </div>
 
@@ -55,8 +59,8 @@ export default function MarketUpdateOverview() {
             </div>
 
             <div className="p-4 rounded-lg bg-cyan-50 border-l-4 border-cyan-600 text-sm text-cyan-900">
-              임팩트: 상품 탐색부터 채팅까지 이어지는 화면 흐름을 정리해 주요
-              화면의 가독성과 전환 경험을 개선했습니다.
+              임팩트: 상품 탐색 → 상세 → 채팅 흐름을 정리하고 Excel 기준표로
+              API 항목 협업 혼선을 줄였습니다.
             </div>
           </div>
         </div>

@@ -1,4 +1,6 @@
-﻿"use client";
+"use client";
+
+import InteractiveProjectImage from "@/components/InteractiveProjectImage";
 
 export default function ProfitPilotOverview() {
   return (
@@ -8,11 +10,13 @@ export default function ProfitPilotOverview() {
           <div className="flex items-center justify-center">
             <div className="relative w-full max-w-md">
               <div className="absolute inset-0 bg-gradient-to-br from-green-100/30 to-emerald-100/30 rounded-2xl blur-2xl" />
-              <div className="relative bg-white rounded-2xl flex items-center justify-center border-2 border-gray-200 p-12 shadow-lg">
-                <img
+              <div className="relative rounded-2xl border-2 border-gray-200 bg-white p-6 shadow-lg">
+                <InteractiveProjectImage
                   src="/profit-main.png"
-                  alt="주식 매매 화면"
-                  className="w-full h-auto rounded-lg"
+                  alt="ProfitPilot 주식 매매 화면"
+                  className="h-[320px] md:h-[380px]"
+                  fit="contain"
+                  detailHref="/projects/profit"
                 />
               </div>
             </div>
@@ -20,7 +24,9 @@ export default function ProfitPilotOverview() {
 
           <div className="space-y-8">
             <div>
-              <p className="text-sm font-semibold text-emerald-600">ProfitPilot</p>
+              <p className="text-sm font-semibold text-emerald-600">
+                ProfitPilot
+              </p>
               <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
                 프로젝트 개요
               </h2>
@@ -28,27 +34,30 @@ export default function ProfitPilotOverview() {
                 AI 투자 시뮬레이션 웹 서비스
               </p>
               <p className="text-gray-600 leading-relaxed">
-                AI 챗봇과 대화하며 가상 주식을 매매하고,
-                실시간 시세/거래 내역/수익률을 확인할 수 있는 서비스입니다.
+                실제 투자 전에 흐름을 연습해보고 싶은 주식 초보 사용자를 위해,
+                실시간 시세와 거래 내역, 수익률 변화를 한 화면에서 확인할 수
+                있도록 구성한 학습형 서비스입니다.
               </p>
             </div>
 
             <div className="space-y-2 text-gray-700">
-              <p className="font-semibold">담당 범위</p>
+              <p className="font-semibold">담당 역할</p>
+              <p>팀 프로젝트 (4인) · 2024.09 ~ 2024.12</p>
               <p className="text-sm text-gray-600">
-                서비스 방향 제안 및 UI/UX 기획
+                팀장으로서 Notion 회의록과 기획 정리를 맡고 UI/UX 기획 및 화면
+                설계(Figma)를 주도했습니다.
               </p>
               <p className="text-sm text-gray-600">
-                Figma 기반 주요 화면 설계 및 핵심 화면 구현
+                홈, 마켓, 포트폴리오, 리더보드, AI 챗봇 화면을 구현했습니다.
               </p>
               <p className="text-sm text-gray-600">
-                홈/마켓/포트폴리오/리더보드/AI 챗봇 화면 구성
+                실시간 데이터 연동과 상태 동기화를 다뤘습니다.
               </p>
               <p className="text-sm text-gray-600">
-                실시간 데이터 연동, 상태 동기화, 피드백 UX 정리
+                다크/라이트 테마 전환과 Toast 기반 피드백 UX를 구성했습니다.
               </p>
               <p className="text-sm text-gray-600">
-                Notion 기반 작업 흐름 및 회의 내용 문서화
+                공통 스타일 구조를 정리하고 인터랙션 일관성을 맞췄습니다.
               </p>
             </div>
 
@@ -57,8 +66,8 @@ export default function ProfitPilotOverview() {
             </div>
 
             <div className="p-4 rounded-lg bg-emerald-50 border-l-4 border-emerald-600 text-sm text-emerald-900">
-              임팩트: 실시간 투자 데이터를 요약 구조로 재배치해 핵심 정보 확인
-              흐름을 더 명확하게 만들었습니다.
+              임팩트: 주식 초보자가 거래 흐름과 자산 변화를 한눈에 이해할 수
+              있도록 실시간 데이터와 피드백 UI를 정리했습니다.
             </div>
           </div>
         </div>
@@ -66,4 +75,3 @@ export default function ProfitPilotOverview() {
     </section>
   );
 }
-

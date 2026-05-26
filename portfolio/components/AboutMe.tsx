@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 export default function AboutMe() {
   return (
@@ -12,18 +12,25 @@ export default function AboutMe() {
                 소개
               </h2>
             </div>
-            <div className="space-y-6 text-gray-700 text-lg leading-relaxed break-keep">
+            <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
               <p className="text-base text-gray-600">
-                소프트웨어공학을 전공하며 웹서비스를 직접 만들고 운영하는 과정에서, 서비스는 구현보다 요구사항과 흐름이 명확할 때 더 안정적으로 운영된다는 점을 배웠습니다.
+                서비스를 단순히 구현하는 데서 그치지 않고, 왜 필요한지와 어떤
+                흐름으로 동작해야 하는지를 먼저 정리한 뒤 실제 화면과 기능으로
+                연결하는 과정에 관심이 있습니다.
               </p>
               <p className="text-base text-gray-600">
-                개인 프로젝트와 팀 프로젝트에서 서비스 구조, 화면 목적, 기능 범위, 예외 케이스를 정리하고 이를 실제 구현과 배포까지 연결하는 경험을 쌓았습니다.
+                개인 프로젝트에서는 아이디어 정의부터 화면 설계, 프론트엔드,
+                백엔드 API, 배포까지 전 과정을 직접 경험했습니다.
               </p>
               <p className="text-base text-gray-600">
-                Figma로 화면 구조를 설계하고 Notion, Google Sheets, Excel로 작업 내용과 API 항목을 문서화하며 여러 사람이 같은 기준으로 움직일 수 있도록 정리했습니다.
+                팀 프로젝트에서는 Figma, Notion, Excel을 활용해 화면 구조, 회의
+                내용, API 항목, 예외 상황을 정리하고 작업 기준을 맞추는 역할을
+                중요하게 생각했습니다.
               </p>
               <p className="text-base text-gray-600">
-                기획 의도를 개발 언어로, 개발 이슈를 사용자 관점으로 다시 풀어 설명하는 커뮤니케이션과 꼼꼼한 정리에 강점이 있습니다.
+                AI 추천, 채팅, 관리자 기능, 실시간 데이터, 배포 이슈 대응을
+                다루며 화면 설계와 구현, 문서화, 운영 관점을 함께 보는 경험을
+                쌓아 왔습니다.
               </p>
             </div>
           </div>

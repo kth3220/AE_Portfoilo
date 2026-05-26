@@ -1,6 +1,6 @@
 ﻿"use client";
 
-import ImageFrame from "@/components/ImageFrame";
+import InteractiveProjectImage from "@/components/InteractiveProjectImage";
 
 export default function AuraFeature() {
   const features = [
@@ -56,12 +56,11 @@ export default function AuraFeature() {
               <p className="text-sm font-semibold text-blue-700 mb-3">
                 {feature.title}
               </p>
-              <ImageFrame
+              <InteractiveProjectImage
                 src={`/${feature.image}`}
                 alt={feature.title}
                 className="h-48"
                 fit="contain"
-                showLoading={false}
               />
               <p className="text-gray-600 mt-2 text-sm">
                 {feature.description}

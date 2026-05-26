@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 export default function Contact() {
   return (
@@ -9,9 +9,10 @@ export default function Contact() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <div className="text-4xl md:text-5xl font-bold">Contact</div>
-            <p className="text-gray-300 leading-relaxed break-keep">
-              사이트 운영과 구축 기획에 필요한 흐름 설계, 협업, 문서화 경험을 프로젝트 중심으로 정리했습니다.
+            <div className="text-4xl md:text-5xl font-bold">Thank you</div>
+            <p className="text-gray-300 leading-relaxed">
+              서비스 기획, 화면 설계, 구현, 문서화, 운영 이슈 대응 경험을
+              프로젝트 중심으로 정리한 포트폴리오입니다.
             </p>
           </div>
 
@@ -20,7 +21,7 @@ export default function Contact() {
               <div>
                 <p className="text-2xl font-semibold">김태희</p>
                 <p className="text-lg text-gray-300">
-                  Web Planning & Site Operations
+                  서비스 기획 · 구현 포트폴리오
                 </p>
               </div>
 

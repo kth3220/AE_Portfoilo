@@ -3,24 +3,24 @@
 export default function TechStack() {
   const categories = [
     {
-      name: "Planning / Deliverables",
-      items: ["Figma", "Notion", "Google Sheets", "Excel", "PowerPoint"],
+      name: "Frontend",
+      items: ["React", "Next.js", "TypeScript", "Node.js"],
     },
     {
-      name: "Project Collaboration",
-      items: ["Git", "GitHub"],
+      name: "State Management",
+      items: ["Zustand"],
     },
     {
-      name: "Frontend Understanding",
-      items: ["HTML/CSS", "JavaScript", "React", "Next.js", "TypeScript"],
+      name: "Backend / API",
+      items: ["FastAPI", "Flask", "Firebase", "REST API", "OpenAI API"],
     },
     {
-      name: "API / Backend Understanding",
-      items: ["REST API", "FastAPI", "Flask", "MySQL", "OpenAI API"],
+      name: "Styling",
+      items: ["Tailwind CSS", "Styled Components"],
     },
     {
-      name: "Deployment / Operation",
-      items: ["Vercel", "AWS EC2", "Zustand", "Tailwind CSS"],
+      name: "Tools",
+      items: ["Git", "Figma"],
     },
   ];
 
@@ -28,12 +28,12 @@ export default function TechStack() {
     <section className="py-24 bg-gray-50">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16">
-          <p className="text-sm font-semibold text-blue-600">Experience Base</p>
+          <p className="text-sm font-semibold text-blue-600">Tech Stack</p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
-            기획 산출물 & 협업 기반
+            기술 스택 & 사용 맥락
           </h2>
           <p className="mt-3 text-gray-600">
-            기획 산출물 작성, 협업 커뮤니케이션, 개발 협업에 활용한 도구와 기술입니다.
+            프로젝트에 실제 적용한 기술 기준으로 정리했습니다.
           </p>
         </div>
 

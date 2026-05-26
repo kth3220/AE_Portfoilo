@@ -7,6 +7,13 @@ export default function MarketUpdateProblem() {
       solution: "/mypage/my-product 응답 구조에 맞춰 바인딩 로직을 수정했습니다.",
       impact: "작성글 목록이 정상 렌더링되어 탐색 흐름이 개선되었습니다.",
     },
+    {
+      problem: "기능이 많아지며 API 변수명과 데이터 항목이 헷갈리던 문제",
+      solution:
+        "Excel로 API 항목과 변수명을 정리해 팀이 같은 기준으로 확인할 수 있도록 맞췄습니다.",
+      impact:
+        "프론트엔드와 백엔드가 같은 기준으로 작업할 수 있어 협업 혼선을 줄였습니다.",
+    },
   ];
 
   return (

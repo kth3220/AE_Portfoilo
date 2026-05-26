@@ -11,44 +11,48 @@ export default function ProjectSummary() {
       featured: true,
       slug: "aura",
       badge: "개인",
+      meta: "개인 프로젝트 · 2025.12 ~ 2026.02",
       image: "aura-main.png",
-      role: "서비스 기획 · 사용자 흐름 설계 · 구현 · 운영",
+      role: "기획 · 화면 설계 · 프론트엔드 · 백엔드 · 배포",
       stack: "Next.js · Node.js · TypeScript · FastAPI · OpenAI API",
       impact:
-        "AI 응답과 추천 결과 흐름을 정리해 추천 UI와 상태 관리의 일관성을 높였습니다.",
+        "날씨·위치·스타일 조건을 반영한 AI 추천 흐름과\n대화 저장 구조를 직접 설계하고 구현했습니다.",
     },
     {
       title: "MarketUpdate",
       icon: "🛒",
       slug: "market",
-      badge: "팀",
+      badge: "팀 5인",
+      meta: "팀 프로젝트 (5인) · 2024.08 ~ 2024.12",
       image: "market-main-long.png",
-      role: "화면 설계 · 문서화 · 프론트엔드 협업",
+      role: "기획 참여 · Figma 설계 · 프론트엔드 · API 항목 정리",
       stack: "React · Node.js · Spring Boot · WebSocket",
       impact:
-        "상품 탐색부터 채팅까지의 흐름을 정리해 주요 화면 가독성과 전환 경험을 개선했습니다.",
+        "상품 탐색 → 상세 → 채팅 흐름을 정리하고\nExcel 기준표로 API 항목 협업 혼선을 줄였습니다.",
     },
     {
       title: "ProfitPilot",
       icon: "📈",
       slug: "profit",
-      badge: "팀",
+      badge: "팀 4인",
+      meta: "팀 프로젝트 (4인) · 2024.09 ~ 2024.12",
       image: "profit-main.png",
-      role: "UI/UX 기획 · 화면 설계 · 협업 문서화",
+      role: "팀장 · 기획 문서화 · Figma 설계 · 실시간 UI 구현",
       stack: "JavaScript · Flask · Chart.js · Jinja",
       impact:
-        "실시간 투자 데이터를 요약 구조로 재배치해 핵심 정보 확인 흐름을 명확하게 만들었습니다.",
+        "주식 초보자를 위한 학습형 투자 흐름을 설계하고\n실시간 데이터와 피드백 UI를 화면에 정리했습니다.",
     },
     {
       title: "Vanilla JS SPA",
       icon: "⚙️",
       slug: "spa",
       badge: "개인",
+      meta: "개인 프로젝트 · 2025.10 ~ 2026.01",
       image: "vanilla-main.png",
-      role: "구조 설계 · 화면 흐름 구현",
+      role: "구조 설계 · 상태/렌더링 구현",
       stack: "JavaScript · Router · Store",
       impact:
-        "라우팅, 상태, 렌더링 관계를 직접 설계하며 웹 서비스 동작 구조를 깊게 이해했습니다.",
+        "라우팅·상태·렌더링 원리를 직접 구현하며\n웹 애플리케이션 구조와 성능 관점을 학습했습니다.",
     },
   ];
 
@@ -58,10 +62,10 @@ export default function ProjectSummary() {
         <div className="mb-12">
           <p className="text-sm font-semibold text-blue-600">Projects</p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
-            프로젝트 스냅샷
+            대표 프로젝트 스냅샷
           </h2>
           <p className="mt-3 text-gray-600">
-            역할, 요구사항 정리 포인트, 협업 방식, 결과를 짧게 정리했습니다.
+            핵심 역할과 임팩트를 한 줄로 요약했습니다.
           </p>
         </div>
 
@@ -80,7 +84,7 @@ export default function ProjectSummary() {
                 <>
                   <span className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-400/10 to-purple-400/10 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                   <span className="absolute top-4 right-4 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 px-3 py-1 text-xs font-semibold text-white shadow-md">
-                    대표
+                    Featured
                   </span>
                 </>
               )}
@@ -104,6 +108,7 @@ export default function ProjectSummary() {
               <p className="mt-4 font-semibold text-gray-900">
                 {project.title}
               </p>
+              <p className="mt-1 text-xs text-gray-500">{project.meta}</p>
               <div className="mt-2 flex flex-wrap gap-2">
                 <span className="text-xs text-gray-600 bg-gray-100 border border-gray-200 inline-flex px-2 py-1 rounded-full">
                   {project.role}
@@ -112,7 +117,7 @@ export default function ProjectSummary() {
                   {project.stack}
                 </span>
               </div>
-              <p className="mt-3 text-xs text-gray-500 leading-relaxed break-keep flex items-start gap-2">
+              <p className="mt-3 text-xs text-gray-500 leading-relaxed whitespace-pre-line flex items-start gap-2">
                 <span className="text-blue-500">✔</span>
                 <span>{project.impact}</span>
               </p>
@@ -120,12 +125,14 @@ export default function ProjectSummary() {
           ))}
         </div>
 
-        <div className="mt-12 space-y-4 text-gray-700 break-keep">
+        <div className="mt-12 space-y-4 text-gray-700">
           <p>
-            기획 의도를 화면 구조와 기능 흐름으로 구체화하고, 구현과 운영 과정에서 필요한 커뮤니케이션 기준까지 함께 정리했습니다.
+            서비스 아이디어 정의, 화면 설계, 데이터 구조 정리, 구현, 운영 이슈
+            대응까지 이어지는 과정을 프로젝트별로 정리했습니다.
           </p>
           <p>
-            각 프로젝트는 단순 개발 결과물이 아니라 요구사항 정의, 기획 산출물, 데이터 연결, QA 관점을 함께 담은 작업입니다.
+            개발뿐 아니라 문서화, 협업 기준 정리, 문제 해결 방식이 함께
+            보이도록 구성했습니다.
           </p>
         </div>
       </div>

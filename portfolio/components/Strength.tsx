@@ -8,28 +8,28 @@ export default function Strength() {
     extra?: string;
   }[] = [
     {
-      title: "Requirement Definition",
+      title: "Component Architecture",
       description:
-        "사용자 시나리오, 기능 범위, 예외 케이스를 먼저 정리해 요구사항을 실행 가능한 단위로 구체화했습니다.",
-      icon: "📌",
+        "컴포넌트의 책임을 분리해 UI 재사용성과 유지보수성을 높였습니다. Container / Presentational 구조로 UI와 로직을 분리했습니다.",
+      icon: "🧩",
     },
     {
-      title: "Communication & PM",
+      title: "State Management",
       description:
-        "기획, 디자인, 개발을 모두 경험해 각 관점의 언어를 연결할 수 있습니다. 수정 포인트와 일정, 이슈를 작업 단위로 정리했습니다.",
-      icon: "🗺️",
+        "Zustand를 활용해 챗봇 상태, 사용자 정보, 추천 데이터를 분리했습니다. 이를 통해 UI 업데이트 흐름을 단순화했습니다.",
+      icon: "🧠",
     },
     {
-      title: "Planning Deliverables",
+      title: "API Integration",
       description:
-        "Figma, Notion, Google Sheets, Excel, PowerPoint를 활용해 화면 구조, API 항목, 회의 내용, 진행 현황을 문서화했습니다.",
-      icon: "🤝",
+        "FastAPI / Flask 기반 API와 연동해 AI 추천 서비스와 웹 UI를 연결했습니다. 비동기 요청 처리와 데이터 구조 안정성을 고려했습니다.",
+      icon: "🔌",
     },
     {
-      title: "Operation & QA",
+      title: "Performance Optimization",
       description:
-        "직접 구현과 배포를 경험해 운영 중 발생할 수 있는 예외와 수정 포인트를 함께 봅니다. 점검과 후속 대응까지 고려해 구조를 다듬었습니다.",
-      icon: "🔎",
+        "Next.js SSR/CSR 환경에서 발생하는 문제를 해결하고 불필요한 렌더링을 줄여 UI 성능을 개선했습니다.",
+      icon: "⚡",
     },
   ];
 
@@ -42,7 +42,7 @@ export default function Strength() {
             핵심 역량 & 작업 방식
           </h2>
           <p className="mt-3 text-gray-600">
-            요구사항 정의, 기획 산출물 작성, 협업 커뮤니케이션, 운영 관점에서 강점을 정리했습니다.
+            구조 설계, 상태 관리, 성능 개선 관점에서 역량을 정리했습니다.
           </p>
         </div>
 
@@ -69,11 +69,11 @@ export default function Strength() {
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
                   {strength.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed text-sm break-keep">
+                <p className="text-gray-600 leading-relaxed text-sm">
                   {strength.description}
                 </p>
                 {strength.extra && (
-                  <p className="text-gray-600 leading-relaxed text-sm mt-3 break-keep">
+                  <p className="text-gray-600 leading-relaxed text-sm mt-3">
                     {strength.extra}
                   </p>
                 )}

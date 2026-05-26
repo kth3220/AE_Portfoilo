@@ -1,6 +1,6 @@
 ﻿"use client";
 
-import ImageFrame from "@/components/ImageFrame";
+import InteractiveProjectImage from "@/components/InteractiveProjectImage";
 
 export default function ProfitPilotFeature() {
   const items = [
@@ -29,12 +29,11 @@ export default function ProfitPilotFeature() {
               <h3 className="text-lg font-bold text-gray-900 mb-3">
                 {item.title}
               </h3>
-              <ImageFrame
+              <InteractiveProjectImage
                 src={`/${item.image}`}
                 alt={item.title}
                 className="h-48"
                 fit="contain"
-                showLoading={false}
               />
             </div>
           ))}
